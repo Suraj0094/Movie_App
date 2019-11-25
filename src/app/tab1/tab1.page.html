@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+        <ion-icon (click)="openMenu()" name="menu"></ion-icon>
+         Movies
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ng-container *ngFor="let data of movieList"> 
+    <ion-card (click)="bookMark(data)">
+       <ion-label>
+         <strong>{{data?.name}}</strong>
+          <span style="float:right">
+              <ion-badge>{{data?.type}}</ion-badge>
+          </span>
+       </ion-label><br>
+       <ion-label>{{data?.year}}</ion-label>   
+    </ion-card>
+   </ng-container>  
+</ion-content>

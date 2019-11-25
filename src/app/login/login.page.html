@@ -1,0 +1,30 @@
+
+
+<ion-content>
+    <img style="left: 33%;
+    position: absolute;
+    height: 124px;
+    width: 124px;
+    top: 5%;" src="assets/app-logo.png">
+    <ion-card class="domainForm"> 
+      
+            <ion-item>
+                <ion-label position="floating">First Name</ion-label>
+                <ion-input [(ngModel)]="user.first_name" ></ion-input>
+            </ion-item>
+        
+            <ion-item>
+                  <ion-label position="floating">Mobile</ion-label>
+                  <ion-input type="number" [(ngModel)]="user.mobile_number" ></ion-input>
+            </ion-item>
+        <ion-button size="small" class="button-align-center" (click)="submit(user)">Submit</ion-button>
+    </ion-card> 
+
+
+</ion-content>
+<div class="footer">
+    <p id="copyright" style="color:white;">
+      <span>Movie App 2019</span> &copy;
+      <span class="appName"><strong>Keriton</strong></span>
+    </p>
+</div>

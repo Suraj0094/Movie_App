@@ -1,0 +1,33 @@
+
+
+.domainForm{
+    // box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-color: #cfcfcf; 
+    position: fixed;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: white;
+    border-radius: 27px;
+    border:1px solid #045287;
+ }
+
+ .button-align-center{
+    margin: 5% 34%;
+    background: #045287 !important;
+  }
+
+  .footer{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    background: #045287; 
+    box-shadow: 2px 0px 0px 0px gray;
+    font-weight:bold;
+}
+.footer #copyright .appName{
+    color:white !important;
+}

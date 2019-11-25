@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            <ion-icon (click)="openMenu()" name="menu"></ion-icon>
+            Bookmark
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+   <ion-card *ngFor="let data of bookmarkedList"> 
+      <ion-label>
+          <strong>{{data?.name}}</strong>
+          <span style="float:right">
+            <ion-badge>{{data?.type}}</ion-badge>
+          </span>
+      </ion-label><br>
+         
+     <ion-label>{{data?.year}}</ion-label>  
+   </ion-card>     
+
+</ion-content>
